@@ -1,0 +1,35 @@
+version: '2'
+services:
+
+  §§INSTANCE-mycollab:
+    image: bibbox/mycollab
+    container_name:  §§INSTANCE-mycollab
+    links:
+      - §§INSTANCE-mycollab-db:mycollab-db
+    ports:
+      - "§§PORT:8080"
+    depends_on:
+      - §§INSTANCE-mycollab-db
+      - §§INSTANCE-mycollab-data
+    volumes_from: 
+      - §§INSTANCE-mycollab-data
+
+  §§INSTANCE-mycollab-db:
+    image: mysql:8
+    container_name: §§INSTANCE-mycollab-db
+    user: root
+    environment:
+      - MYSQL_ROOT_PASSWORD=thispasswordisneverusedeveninsidethecontainer
+      - MYSQL_DATABASE=mycollab
+      - MYSQL_USER=mycollab
+      - MYSQL_PASSWORD=mycollab4bibbox
+    volumes_from: 
+      - §§INSTANCE-mycollab-data
+    depends_on:
+      - §§INSTANCE-mycollab-data
+
+  §§INSTANCE-mycollab-data:
+    image: busybox
+    container_name: §§INSTANCE-mycollab-data
+    volumes:
+      - ./var/lib/mysql:/var/lib/mysql

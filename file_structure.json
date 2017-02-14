@@ -1,0 +1,6 @@
+{
+  "makefolders":[
+    "var/lib/mysql",
+  ],
+  "copyfiles":[]
+}
