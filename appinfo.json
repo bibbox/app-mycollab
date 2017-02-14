@@ -1,0 +1,10 @@
+{
+		"name": "MyCollab x.x.x",
+		"short_name": "MyCollab",
+		"version": "vx.x.x",
+		"description": "MyCollab is the free and open source collaboration tools, it has three existing modules: Project Management, CRM and Document Management. Intuitive UI, rich features, high performance and stable are the advantages compare with various popular tools in the market such as Redmine, Bugzilla, Mantis etc. This open source is included into a trusted commercial product that is deployed on hundreds of companies' servers.",
+        "short_description": "Project Management System",
+		"catalogue_url": "",
+		"application_url": "https://community.mycollab.com",
+		"tags": ["Project Management"]
+}

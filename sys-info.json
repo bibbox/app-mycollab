@@ -1,0 +1,4 @@
+{
+  runningcontainers:["§§INSTANCE-mycollab", "§§INSTANCE-mycollab-db"],
+  supportcontainers:["§§INSTANCE-mycollab-data"]    
+}
