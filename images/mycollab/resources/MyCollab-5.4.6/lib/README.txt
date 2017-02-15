@@ -1,1 +1,0 @@
-Runtime libraries of MyCollab
