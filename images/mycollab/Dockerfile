@@ -16,15 +16,7 @@ RUN curl -L https://sourceforge.net/projects/mycollab/files/MyCollab_$MYCOLLAB_V
 
 RUN unzip /opt/mycollab/MyCollab-All-$MYCOLLAB_VERSION.zip -d /opt/mycollab
 
-# COPY scripts/mycollab /etc/init.d/mycollab
-
-# WORKDIR /opt/mycollab/MyCollab-$MYCOLLAB_VERSION/bin
-
-# RUN ln -s /opt/mycollab/MyCollab-$MYCOLLAB_VERSION/bin/startup.sh /etc/init.d/mycollab_start
-
-# RUN chmod ugo+x /etc/init.d/mycollab
-
-# RUN update-rc.d mycollab start
+RUN sed -ie 's/8080/80/g' /opt/mycollab/MyCollab-$MYCOLLAB_VERSION/bin/mycollab.ini
     
 ADD scripts /opt/scripts
 WORKDIR /opt/scripts

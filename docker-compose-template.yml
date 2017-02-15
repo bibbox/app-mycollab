@@ -7,7 +7,7 @@ services:
     links:
       - §§INSTANCE-mycollab-db:mycollab-db
     ports:
-      - "§§PORT:8080"
+      - "§§PORT:80"
     depends_on:
       - §§INSTANCE-mycollab-db
       - §§INSTANCE-mycollab-data
