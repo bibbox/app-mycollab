@@ -15,7 +15,7 @@ services:
       - §§INSTANCE-mycollab-data
 
   §§INSTANCE-mycollab-db:
-    image: mysql:8
+    image: mysql:5.7.17
     container_name: §§INSTANCE-mycollab-db
     user: root
     environment:
