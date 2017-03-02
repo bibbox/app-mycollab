@@ -1,9 +1,17 @@
 version: '2'
+
+networks:
+    bibbox-default-network:
+      external: true
+
 services:
 
   §§INSTANCE-mycollab:
     image: bibbox/mycollab
     container_name:  §§INSTANCE-mycollab
+    restart: unless-stopped
+    networks:
+      - bibbox-default-network
     links:
       - §§INSTANCE-mycollab-db:mycollab-db
     ports:
@@ -17,6 +25,9 @@ services:
   §§INSTANCE-mycollab-db:
     image: mysql:5.7.17
     container_name: §§INSTANCE-mycollab-db
+    restart: unless-stopped
+    networks:
+      - bibbox-default-network
     user: root
     environment:
       - MYSQL_ROOT_PASSWORD=thispasswordisneverusedeveninsidethecontainer
