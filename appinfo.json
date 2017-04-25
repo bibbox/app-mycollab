@@ -1,6 +1,6 @@
 {
-		"name": "MyCollab CE",
-		"short_name": "MyCollab",
+		"name": "MyCollab Community Eddition",
+		"short_name": "MyCollab CE",
 		"version": "v5.3.4",
 		"description": "MyCollab CE is the free and open source collaboration tools, it has three existing modules: Project Management, CRM and Document Management. Intuitive UI, rich features, high performance and stable are the advantages compare with various popular tools in the market such as Redmine, Bugzilla, Mantis etc. This open source is included into a trusted commercial product that is deployed on hundreds of companies' servers.",
         	"short_description": "Project Management System",
