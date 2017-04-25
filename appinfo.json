@@ -6,5 +6,6 @@
         "short_description": "Project Management System",
 		"catalogue_url": "",
 		"application_url": "https://community.mycollab.com",
-		"tags": ["Project Management"]
+		"tags": ["Project Management"],
+		"application_documentation_url": "https://community.mycollab.com/meet-mycollab/"
 }
